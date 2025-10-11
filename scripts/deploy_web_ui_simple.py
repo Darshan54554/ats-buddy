@@ -45,27 +45,39 @@ def upload_web_ui_files(bucket_name):
             print(f"Error: Web UI directory not found: {web_ui_dir}")
             return False
         
-        # File mappings with content types
-        files_to_upload = {
-            'index.html': 'text/html',
-            'script.js': 'application/javascript', 
-            'styles.css': 'text/css'
+        # Enhanced file mappings with proper content types and headers
+        files_config = {
+            'index.html': {
+                'ContentType': 'text/html; charset=utf-8',
+                'CacheControl': 'no-cache, no-store, must-revalidate'
+            },
+            'script.js': {
+                'ContentType': 'application/javascript; charset=utf-8',
+                'CacheControl': 'public, max-age=86400'
+            },
+            'styles.css': {
+                'ContentType': 'text/css; charset=utf-8',
+                'CacheControl': 'public, max-age=86400'
+            }
         }
         
         print(f"Uploading web UI files to s3://{bucket_name}/")
         
-        for filename, content_type in files_to_upload.items():
+        for filename, config in files_config.items():
             file_path = web_ui_dir / filename
             
             if file_path.exists():
-                print(f"  Uploading {filename}")
+                print(f"  Uploading {filename} with MIME type: {config['ContentType']}")
                 s3.upload_file(
                     str(file_path),
                     bucket_name,
                     filename,
                     ExtraArgs={
-                        'ContentType': content_type,
-                        'CacheControl': 'max-age=86400'  # 24 hours cache for static assets
+                        'ContentType': config['ContentType'],
+                        'CacheControl': config['CacheControl'],
+                        'Metadata': {
+                            'uploaded-by': 'ats-buddy-deployment'
+                        }
                     }
                 )
             else:
